@@ -1,4 +1,4 @@
-package com.typ.weatherapp.ui.screen
+package com.typ.weatherapp.ui.screen.util
 
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Scaffold
@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.unit.dp
 import com.typ.weatherapp.ui.screen.components.ActionBar
+import com.typ.weatherapp.ui.screen.components.AirQuality
 import com.typ.weatherapp.ui.screen.components.DailyForecast
 
 @Composable
@@ -33,6 +34,10 @@ fun WeatherScreen() {
                 modifier = Modifier.height(12.dp)
             )
             DailyForecast()
+            Spacer(
+                modifier = Modifier.height(16.dp)
+            )
+            AirQuality()
         }
     }
 
